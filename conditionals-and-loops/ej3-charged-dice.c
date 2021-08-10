@@ -5,11 +5,7 @@
 int main(void)
 {   
     srand(time(NULL));
-    int rng;
-    do {
-        rng = rand();
-    } while (rng >= RAND_MAX - (RAND_MAX % 80));
-    rng = rng%80;
+    int rng= (rand()%80)+ 1;
     if (rng <= 10)
     {
         printf("1");

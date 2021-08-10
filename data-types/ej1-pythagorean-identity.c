@@ -6,7 +6,7 @@
 int main(int argc, char const *argv[])
 {
     float theta = atof(argv[1]);
-    float thetarad = (theta * M_PI) / 180;
+    float thetarad = (theta * M_PI) / 180; //passing deg to rad
     float r = cos(thetarad) * cos(thetarad) + sin(thetarad) * sin(thetarad);
     printf("%f rad", r);
     return 0;
