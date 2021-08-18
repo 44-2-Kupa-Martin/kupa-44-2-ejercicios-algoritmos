@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 int main (void) {
+  printf("This program only takes numbers!\n");
   double hourlywage, hours;
   printf("Enter hourly wage\n");
   scanf("%lf", &hourlywage);
   printf("Enter worked hours\n");
   scanf("%lf", &hours);
-  double salary= hourlywage*hours;
-  printf("Your salary is %lf\n", salary);
+  printf("Your salary is %lf\n", hourlywage * hours);
   return 0;
 }

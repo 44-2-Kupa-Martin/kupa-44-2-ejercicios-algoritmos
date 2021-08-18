@@ -5,9 +5,10 @@
 
 int main(int argc, char const *argv[])
 {
-    float theta = atof(argv[1]);
-    float thetarad = (theta * M_PI) / 180; //passing deg to rad
-    float r = cos(thetarad) * cos(thetarad) + sin(thetarad) * sin(thetarad);
-    printf("%f rad", r);
+    double theta= atof(argv[1]);
+    double thetarad= (theta * M_PI) / 180; //passing deg to rad
+    double r = cos(thetarad) * cos(thetarad) + sin(thetarad) * sin(thetarad);
+    double thetadeg= (r * 180) / M_PI; // passing rad to deg
+    printf("%f deg", r);
     return 0;
 }

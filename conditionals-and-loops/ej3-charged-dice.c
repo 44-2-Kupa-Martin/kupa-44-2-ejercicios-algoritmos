@@ -35,7 +35,5 @@ int main(void)
     {
         printf("6");
     }
-    clock_t starttimer = clock();
-    while (clock() < starttimer + 1100){}
     return 0;
 }

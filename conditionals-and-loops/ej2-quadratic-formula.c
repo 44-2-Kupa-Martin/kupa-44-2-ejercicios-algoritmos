@@ -19,10 +19,8 @@ int main(int argc, char const *argv[])
         printf("The equation has no real solution");
         return 0;
     }
-
-    double r1 = ((b*-1) / (2*a)) + (sqrt(discriminante) / (2*a));
-    printf("Root 1 = %f\n", r1);
-    double r2 = ((b*-1) / (2*a)) - (sqrt(discriminante) / (2*a));
-    printf("Root 2 = %f\n", r2);
+    
+    printf("Root 1 = %f\n", ((b*-1) / (2*a)) + (sqrt(discriminante) / (2*a)));
+    printf("Root 2 = %f\n", ((b*-1) / (2*a)) - (sqrt(discriminante) / (2*a)));
     return 0;
 }

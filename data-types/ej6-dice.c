@@ -9,7 +9,6 @@ int main(void)
     clock_t starttimer = clock();
     while (clock() < starttimer + 1001){}
     int b = rand() % 6 + 1;
-    int r = a + b;
-    printf("%d\n", r);
+    printf("%d\n", a + b);
     return 0;
 }

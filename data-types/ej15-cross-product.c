@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int main (void) {
+  printf("This program only takes numbers!\n");
   double x1, y1, z1;
   double x2, y2, z2;
   double xr, yr, zr;

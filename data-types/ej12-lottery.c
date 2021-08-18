@@ -11,9 +11,7 @@ int main (void) {
     printf("Invalid input\nNumber must be in the interval [0; 99]\n");
     scanf("%d", &num);
   }
-  
   srand(time(NULL));
-  int randnum= rand()%100;
-  printf("%s\n", num== randnum ? "You won\n" : "You lose\n");
+  printf((num == rand()%100) ? "You won\n" : "You lose\n");
   return 0;
 }

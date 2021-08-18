@@ -6,8 +6,9 @@
 int main(int argc, char const *argv[])
 {
     double theta = atof(argv[1]);
-    double thetarad = (theta * M_PI) / 180;
+    double thetarad = (theta * M_PI) / 180; //deg to rad
     double r = sin(2*thetarad) + sin(3*thetarad);
-    printf("%f rad", r);
+    double thetadeg= (r * 180) / M_PI; // passing rad to deg
+    printf("%f rad", thetadeg);
     return 0;
 }

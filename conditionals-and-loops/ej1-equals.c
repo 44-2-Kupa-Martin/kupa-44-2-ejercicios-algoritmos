@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
     if (x == y && y == z)
     {
         printf("Equals");
-        exit(0);
+        return 0;
     }
     printf("Not equals");
     return 0;
