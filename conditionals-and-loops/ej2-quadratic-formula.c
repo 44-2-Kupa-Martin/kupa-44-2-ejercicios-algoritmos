@@ -10,14 +10,14 @@ int main(int argc, char const *argv[])
     if (a == 0)
     {
         printf("Cant divide by zero");
-        exit(0);
+        return 0;
     }
     
     double discriminante = (b*b)+(-4*a*c);
     if (discriminante < 0)
     {
         printf("The equation has no real solution");
-        exit(0);
+        return 0;
     }
 
     double r1 = ((b*-1) / (2*a)) + (sqrt(discriminante) / (2*a));
