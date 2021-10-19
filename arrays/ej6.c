@@ -1,25 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char const *argv[])
+int main(void)
 {
-    int d= atoi(argv[1]);
+    int const n= 3;
+    double v1[n];
+    double v2[n];
+    int prev= 0;
+    for (size_t i = 0; i < n; i++)
+    {
+        if (prev != 0) {
+            v1[i]= prev + 2;
+            v2[i]= prev + 2;
+        } else {
+            v1[i]= 2;
+            v2[i]= 2;
+            prev= i + 2;
+        }
+    }
     double r= 0;
-    double v1[d], v2[d], r[d];
-    for (int i = 0; i < d; i++)
+    for (size_t i = 0; i < 3; i++)
     {
-        printf("Enter %d coordinate of the 1st vector\n", i+1);
-        scanf("%lf", &v1[i]);
+        r+= v1[i] * v2[i];
     }
-    for (int i = 0; i < d; i++)
-    {
-        printf("Enter %d coordinate of the 2st vector\n", i+1);
-        scanf("%lf", &v2[i]);
-    }
-    for (int i = 0; i < d; i++)
-    {
-        r= r + v1[i] + v2[i];
-    }
-    printf("%f", r);
+    printf("%lf\n", r);
     return 0;
 }
