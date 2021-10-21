@@ -5,7 +5,7 @@
 #include <time.h>
 #include <stdbool.h>
 
-int main(void)
+int main(int argc, char const *argv[])
 {
     srand(time(NULL));
     char *type[4]= {"copas", "basto", "espada", "oro"};
@@ -14,6 +14,7 @@ int main(void)
     char *randDeck[40];
     int deckIndex= 0;
     int randIndexes[40]= {0};
+    int n= atoi(argv[1]);
     for (int i = 0; i < 4; i++)
     {
         for (int j = 0; j < 10; j++) {
@@ -39,6 +40,8 @@ int main(void)
     }
     for (size_t i = 0; i < 40; i++) {
       randDeck[i]= deck[randIndexes[i]];
+    }
+    for (size_t i = 0; i < n*3; i++) {
       printf("%s\n", randDeck[i]);
     }
     return 0;
