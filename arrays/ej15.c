@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
     srand(time(NULL));
     char *type[4]= {"copas", "basto", "espada", "oro"};
     char *number[10]= {"Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis", "Siete", "Diez", "Once", "Doce"};
-    char deck[40][100]= {'\0'};
+    char deck[40][100]= {{'\0'}};
     char *randDeck[40];
     int deckIndex= 0;
     int randIndexes[40]= {0};
